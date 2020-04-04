@@ -1,0 +1,70 @@
+== image-packer
+image-packer simple CLI tool for combine / split images in different image formats.
+
+=== Actions
+
+.split
+Split provided sprite-shit with manifest file back to stand alone image files.
+
+
+=== SpriteShit Manifest
+
+==== Custom
+[source,json]
+----
+{
+  "frames": {
+    "file1.png": {
+      "frame": {
+        "x": 1132,
+        "y": 146,
+        "w": 21,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 21,
+        "h": 22
+      }
+    },
+    "file... n.png": {
+      "frame": {
+        "x": 1132,
+        "y": 146,
+        "w": 21,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 21,
+        "h": 22
+      }
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "image": "filename.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1159,
+      "h": 245
+    },
+    "scale": "1"
+  }
+}
+----
+
